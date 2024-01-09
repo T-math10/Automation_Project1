@@ -1,5 +1,6 @@
 Feature: Search and Place the order for Products
 
+  @Test
   Scenario: Search Experience for product search in both home and offers page
 
     Given User is on GreenCart Landing page

@@ -3,6 +3,13 @@ package cucumberOptions;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(features= "C:/Users/New/IdeaProjects/CucumberFramework/src/test/java/features",glue="stepDefinitions",monochrome = true,dryRun = true)
+@CucumberOptions(
+        features = {"src/test/java/features/"},
+        glue = {"stepDefinitions"},
+        tags = "@Test"
+)
 public class TestNGTestRunner extends AbstractTestNGCucumberTests {
+    public TestNGTestRunner() {
+
+    }
 }
